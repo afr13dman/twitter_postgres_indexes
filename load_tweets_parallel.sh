@@ -15,7 +15,7 @@ files='/data/tweets/geoTwitter21-01-01.zip
 echo '================================================================================'
 echo 'load pg_denormalized'
 echo '================================================================================'
-# time echo "$files" | parallel ./load_denormalized.sh
+time echo "$files" | parallel ./load_denormalized.sh
 
 echo '================================================================================'
 echo 'load pg_normalized_batch'
